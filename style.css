@@ -18,7 +18,7 @@
 
 }
 
-/* ----- BASE ----- */
+
 *{
     margin: 0;
     padding: 0;
@@ -48,9 +48,6 @@ html{
 }
 
 
-/* ---##-- REUSABLE CSS --##--- */
-
-/* ----- GLOBAL BUTTON DESIGN ----- */
 .btn{
     font-weight: 500;
     padding: 12px 20px;
@@ -58,7 +55,7 @@ html{
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: .4s;
+    transition: .2s;
 }
 .btn>i{
     margin-left: 10px;
@@ -76,7 +73,13 @@ i{
 /* ------- BASE -------- */
 body{
     background: var(--body-color);
+    height: 100%;
+    width: 100%;
 }
+body {
+    overflow-x: hidden;
+}
+
 .container{
     width: 100%;
     position: relative;
@@ -92,7 +95,7 @@ nav{
     line-height: 90px;
     background: var(--body-color);
     padding-inline: 9vw;
-    transition: .3s;
+    transition: .2s;
     z-index: 100;
 }
 .nav-logo{
@@ -136,7 +139,7 @@ nav{
 .active-link{
     position: relative;
     color: var(--first-color);
-    transition: .3;
+    transition: .2;
 }
 .nav-button a{
     text-decoration: none;
@@ -249,7 +252,7 @@ nav{
     height: 380px;
     border-radius: 55% 45% 55% 45%;
     overflow: hidden;
-    animation: imgFloat 7s ease-in-out infinite;
+    animation: imgFloat 5s ease-in-out infinite;
 }
 .image img{
     width: 380px;
@@ -526,15 +529,13 @@ footer{
 
 
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
-/* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1024px){
     .featured-text{
         padding: 0;
     }
     .image, .image img{
-        width: 70%; /* Adjust image size */
-        height: auto; /* Maintain aspect ratio */
-        max-width: 320px; /* Limit maximum width */
+        width: 320px;
+        height: 320px;
     }
 }
 
@@ -547,15 +548,81 @@ footer{
         left: 0;
     }
     .nav-menu{
-        /* Your existing styles */
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(20px);
+        width: 100%;
+        min-height: 450px;
+        height: 90vh;
+        transition: .2s;
     }
-    /* Adjust other styles for smaller screens */
+    .nav_menu_list{
+        flex-direction: column;
+    }
+    .nav-menu-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .featured-box{
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+    .featured-text{
+        width: 100%;
+        order: 2;
+        justify-content: center;
+        align-content: flex-start;
+        min-height: 60vh;
+    }
+    .social_icons{
+        margin-top: 2em;
+    }
+    .featured-image{
+        order: 1;
+        justify-content: center;
+        min-height: 150px;
+        width: 100%;
+        margin-top: 65px;
+    }
+    .image, .image img{
+        width: 150px;
+        height: 150px;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+    .col{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .about-info, .contact-info{
+        width: 100%;
+    }
+    .project-container{
+        justify-content: center;
+    }
+    .project-box{
+        width: 80%;
+    }
+
 }
 
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
+
 @media only screen and (max-width: 540px){
     .featured-name{
-        font-size: 30px; /* Further reduce font size */
+        font-size: 40px;
     }
     .project-box{
         width: 100%;
@@ -567,4 +634,7 @@ footer{
         width: 100%;
     }
 }
-
+.form-button i{
+    font-size: 18px;
+    transform: rotate(-45deg); /* Fix typo here */
+}
