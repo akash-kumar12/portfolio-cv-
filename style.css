@@ -75,6 +75,7 @@ body{
     background: var(--body-color);
     height: 100%;
     width: 100%;
+    
 }
 body {
     overflow-x: hidden;
@@ -83,6 +84,7 @@ body {
 .container{
     width: 100%;
     position: relative;
+    
 }
 
 /* ----- NAVIGATION BAR ----- */
@@ -158,8 +160,10 @@ nav{
 
 
 /* ----- WRAPPER DESIGN ----- */
+
 .wrapper{
     padding-inline: 10vw;
+   
 }
 
 /* ----- FEATURED BOX ----- */
@@ -168,6 +172,7 @@ nav{
     display: flex;
     height: 100vh;
     min-height: 700px;
+    
 }
 
 
@@ -268,6 +273,9 @@ nav{
 
 
 /* ----- MAIN BOX ----- */
+.pading{
+    padding: 1rem;
+}
 .section{
     padding-block: 5em;
 }
