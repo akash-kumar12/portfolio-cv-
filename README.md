@@ -1,4 +1,3 @@
-It seems like you've provided the HTML, CSS, and JavaScript code for a portfolio website. Let's break down the structure of your website and discuss the features and technologies used.
 
 ### Structure of the Website:
 1. **Header Section:** Contains the navigation menu, logo, and a button to toggle the mobile menu.
@@ -25,5 +24,3 @@ It seems like you've provided the HTML, CSS, and JavaScript code for a portfolio
   - **Typed.js:** Implements the typing effect for text animation.
   - **ScrollReveal:** Adds scroll animations for revealing content.
   
-### Your Request:
-You mentioned writing about your project with features and the technologies used. Based on the provided code, it seems like you've developed a portfolio website showcasing your skills and projects. If you need further assistance or have specific questions about your project, feel free to ask!
