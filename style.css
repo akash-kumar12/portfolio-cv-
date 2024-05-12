@@ -631,3 +631,7 @@ footer{
         width: 100%;
     }
 }
+.form-button i{
+    font-size: 18px;
+    transform: rotate(-45deg); /* Fix typo here */
+}
